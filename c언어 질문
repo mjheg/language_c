@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+int line, i, j, a;
+scanf("%d", &line);
+for(i = line; i >= 1; i--)    // 5입력하면 처음에 i는 4이다
+{
+    for(j = i; j >= 1; j--)     //j는 4 j가 1보다크면 참
+    {
+        printf(" ");
+    }
+
+    for(a = i; a <= line ; a++)     //a는 4 a가 5보다작거나 같으면 참
+    {
+        printf("*");
+    }
+    printf("\n");
+}
+
+
+//이거 5를 입력했을떄 i가 처음에 4이므로 a또한 4이다. 그래서 그 for문이 5보다 작거나 같으면 참이므로 첫줄은 *이 두번 출력되어야 하는거 아님?  **질문**
+
+
+
+
